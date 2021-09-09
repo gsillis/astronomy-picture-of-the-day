@@ -17,6 +17,6 @@ class LoginUITest: XCTestCase {
         let height = UIScreen.main.bounds.height
         let size = CGSize(width: width, height: height)
 
-        assertSnapshot(matching: vc, as: Snapshotting.image(size: size))
+        assertSnapshot(matching: vc, as: Snapshotting.image(size: size), record: false)
     }
 }
