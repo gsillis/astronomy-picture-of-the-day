@@ -1,18 +1,18 @@
 //
-//  LoginUITest.swift
+//  HomeUITestts.swift
 //  ViewCodeTests
 //
-//  Created by Gabriela Sillis on 08/09/21.
+//  Created by Gabriela Sillis on 09/09/21.
 //
 
 import XCTest
 import SnapshotTesting
 @testable import ViewCode
 
-class LoginUITest: XCTestCase {
+class HomeUITestts: XCTestCase {
 
-    func testLoginView() {
-        let vc = LoginVC()
+    func testHomeView() {
+        let vc = HomeVC()
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
         let size = CGSize(width: width, height: height)
