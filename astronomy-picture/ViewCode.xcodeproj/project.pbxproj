@@ -20,6 +20,8 @@
 		DEA2494C26EA6F780007D43F /* HomeUITestts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA2494B26EA6F780007D43F /* HomeUITestts.swift */; };
 		DEA2494E26EA9D9B0007D43F /* API.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEA2494D26EA9D9B0007D43F /* API.plist */; };
 		DEA2495026EA9E4D0007D43F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEA2494F26EA9E4D0007D43F /* GoogleService-Info.plist */; };
+		DEA2495326EAA8CA0007D43F /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA2495226EAA8CA0007D43F /* LoginButton.swift */; };
+		DEA2495726EAAD160007D43F /* LoginButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA2495626EAAD160007D43F /* LoginButtonUITests.swift */; };
 		DEBEC9E026D3F4E200D92DB5 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9DF26D3F4E200D92DB5 /* LoginScreen.swift */; };
 		DEBEC9E326D42B4E00D92DB5 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9E226D42B4E00D92DB5 /* UIColor+Extensions.swift */; };
 		DEFB59F326DDA29100E76974 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB59F226DDA29100E76974 /* Alert.swift */; };
@@ -62,6 +64,8 @@
 		DEA2494B26EA6F780007D43F /* HomeUITestts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUITestts.swift; sourceTree = "<group>"; };
 		DEA2494D26EA9D9B0007D43F /* API.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = API.plist; sourceTree = "<group>"; };
 		DEA2494F26EA9E4D0007D43F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DEA2495226EAA8CA0007D43F /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		DEA2495626EAAD160007D43F /* LoginButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonUITests.swift; sourceTree = "<group>"; };
 		DEBEC9DF26D3F4E200D92DB5 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		DEBEC9E226D42B4E00D92DB5 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		DEFB59F226DDA29100E76974 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				DEA2494126E94B740007D43F /* LoginUITests.swift */,
 				DEA2494926EA6DED0007D43F /* RegisterUITestes.swift */,
 				DEA2494B26EA6F780007D43F /* HomeUITestts.swift */,
+				DEA2495626EAAD160007D43F /* LoginButtonUITests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -176,6 +181,14 @@
 				DEA2494D26EA9D9B0007D43F /* API.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DEA2495126EAA8300007D43F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DEA2495226EAA8CA0007D43F /* LoginButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		DEBEC9DC26D3F4A900D92DB5 /* Login */ = {
@@ -233,6 +246,7 @@
 		DEFB59F526DDAA7C00E76974 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DEA2495126EAA8300007D43F /* Components */,
 				DEFB59F426DDAA7100E76974 /* Home */,
 				DEBEC9DC26D3F4A900D92DB5 /* Login */,
 				DEFED7EB26D5704400B2AEEA /* Register */,
@@ -511,6 +525,7 @@
 				DEFB5A0726DEB8CB00E76974 /* Model.swift in Sources */,
 				DEFED7F126D575E800B2AEEA /* RegisterScreen.swift in Sources */,
 				DEFED7EF26D5707400B2AEEA /* RegisterVC.swift in Sources */,
+				DEA2495326EAA8CA0007D43F /* LoginButton.swift in Sources */,
 				DEFB5A0A26DEB9E800E76974 /* HomeViewModel.swift in Sources */,
 				DE63746126D0393D0041D3D9 /* AppDelegate.swift in Sources */,
 				DEFB59F326DDA29100E76974 /* Alert.swift in Sources */,
@@ -523,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA2494A26EA6DED0007D43F /* RegisterUITestes.swift in Sources */,
+				DEA2495726EAAD160007D43F /* LoginButtonUITests.swift in Sources */,
 				DEA2494C26EA6F780007D43F /* HomeUITestts.swift in Sources */,
 				DEA2494226E94B740007D43F /* LoginUITests.swift in Sources */,
 			);

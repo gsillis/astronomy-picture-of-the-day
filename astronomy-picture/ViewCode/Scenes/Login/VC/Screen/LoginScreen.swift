@@ -68,17 +68,11 @@ class LoginScreen: UIView {
         return password
     }()
 
-    lazy private var loginButton: UIButton = {
-        let button = UIButton()
+    lazy private var loginButton: LoginButton = {
+        let button = LoginButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.clipsToBounds = true
-        button.layer.cornerRadius = 7.5
-        button.layer.borderColor = UIColor.darkGray.cgColor
-        button.layer.borderWidth = 1
         button.setTitle("login", for: .normal)
         button.setTitleColor(.darkGray, for: .normal)
-        button.isEnabled = false
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         button.addTarget(self, action: #selector(self.tappedLoginButton), for: .touchUpInside)
 
         return button
@@ -153,7 +147,6 @@ class LoginScreen: UIView {
         if enable {
             self.loginButton.isEnabled = true
             self.loginButton.setTitleColor(.customRed, for: .normal)
-            self.loginButton.layer.borderColor = UIColor.customRed.cgColor
         }
     }
 
