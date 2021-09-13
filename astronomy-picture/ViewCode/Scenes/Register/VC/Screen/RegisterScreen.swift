@@ -64,7 +64,6 @@ class RegisterScreen: UIView {
         password.textColor = .white
         password.font = UIFont.systemFont(ofSize: 15)
         
-        // text.becomeFirstResponder()
         return password
     }()
     

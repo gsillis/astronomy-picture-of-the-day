@@ -42,22 +42,24 @@ extension RegisterVC: UITextFieldDelegate {
 // MARK: - RegisterScreenProtocol
 extension RegisterVC: RegisterScreenProtocol {
     func configTappedRegisterButton() {
+        self.firebaseRegister()
+    }
 
+    private func firebaseRegister() {
         guard let email = self.registerScreen?.emailTexfield.text,
               let password = self.registerScreen?.passwordTexfield.text else {
             return }
 
-        // cadastra usuários no firebase
-//        self.auth?.createUser(withEmail: email, password:
-//                                password, completion: { success, error in
-//            if error != nil {
-//                self.alert?.showAlert(title: "Atenção", message: "Algo deu errado, tente novamente mais tarde")
-//            } else {
-//                self.alert?.showAlert(title: "Tudo certo", message: "Seu cadastro foi criado", completion: {
-//                    self.navigationController?.popViewController(animated: true)
-//                })
-//            }
-//        })
+        self.auth?.createUser(withEmail: email, password:
+                                password, completion: { _, error in
+            if error != nil {
+                self.alert?.showAlert(title: "Atenção", message: "Algo deu errado, tente novamente mais tarde")
+            } else {
+                self.alert?.showAlert(title: "Tudo certo", message: "Seu cadastro foi criado", completion: {
+                    self.navigationController?.popViewController(animated: true)
+                })
+            }
+        })
     }
 
     func configTappedBackButton() {

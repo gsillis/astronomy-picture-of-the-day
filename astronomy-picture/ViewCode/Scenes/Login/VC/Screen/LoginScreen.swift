@@ -38,7 +38,7 @@ class LoginScreen: UIView {
         return  label
     }()
 
-    lazy private var emailTexfield: UITextField = {
+    lazy var emailTexfield: UITextField = {
         let text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
         text.backgroundColor = .customRed
@@ -52,7 +52,7 @@ class LoginScreen: UIView {
         return text
     }()
 
-    lazy private var passwordTexfield: UITextField = {
+    lazy var passwordTexfield: UITextField = {
         let password = UITextField()
         password.translatesAutoresizingMaskIntoConstraints = false
         password.backgroundColor = .customRed
@@ -68,7 +68,7 @@ class LoginScreen: UIView {
         return password
     }()
 
-    lazy private var loginButton: UIButton = {
+    lazy var loginButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.clipsToBounds = true
@@ -159,7 +159,7 @@ class LoginScreen: UIView {
 
     // MARK: - Constraints
     private func configConstraints() {
-        // é um array de constraints
+        
         NSLayoutConstraint.activate([
             // MARK: - loginImageView
 
