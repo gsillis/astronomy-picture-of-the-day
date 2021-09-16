@@ -8,6 +8,8 @@ target 'ViewCode' do
   # Pods for ViewCode
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Crashlytics'
+pod 'Firebase/Analytics'
 pod 'Alamofire', '~> 5.4'
 pod 'SDWebImage', '~> 5.0'
 pod 'SwiftLint'
