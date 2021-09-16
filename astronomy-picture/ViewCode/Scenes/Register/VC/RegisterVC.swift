@@ -26,6 +26,7 @@ class RegisterVC: UIViewController {
         self.auth = Auth.auth()
         self.alert = Alert(controller: self)
     }
+
 }
 
 // MARK: - UITextFieldDelegate
